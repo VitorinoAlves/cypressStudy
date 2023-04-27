@@ -3,8 +3,17 @@ require("dotenv").config();
 
 module.exports = defineConfig({
   modifyObstructiveCode: true,
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'Test Automation Report',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
+  },
   e2e: {
     setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
       if(config.env.environment==="qa"){
         return {
           baseUrl:'https://www.demoblaze.com',
