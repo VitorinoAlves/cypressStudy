@@ -1,4 +1,4 @@
-name: e2e-tests
+name: e2e-tests-cy
 on: workflow_dispatch
 jobs:
   cypress-run:
