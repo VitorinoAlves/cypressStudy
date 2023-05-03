@@ -1,5 +1,5 @@
-name: e2e-tests
-on: worfklow_dispatch
+name: e2e-tests-cy
+on: workflow_dispatch
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -13,3 +13,5 @@ jobs:
           QA_PASSWORD: ${{secrets.QA_PASSWORD}}
         with:
           start: npm run cy:run:qa
+          wait-on: 'https://www.demoblaze.com'
+          config: baseUrl=https://www.demoblaze.com
