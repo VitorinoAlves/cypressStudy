@@ -26,10 +26,10 @@ module.exports = defineConfig({
         }
       } else {
         return {
-          baseUrl:'https://api.demoblaze.com',
+          baseUrl:'https://www.localhost.com',
           env: {
             env:'local',
-            apiUrl: 'https://api.demoblaze.com',
+            apiUrl: 'https://api.localhost.com',
             userNameConfig: process.env.LOCAL_USER_NAME,
             password: process.env.LOCAL_PASSWORD
           }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx cypress run --env environment=qa",
     "cypress:open": "cypress open",
     "cy:open:qa": "cypress open --env environment=qa",
     "cy:run:qa": "npx cypress run --env environment=qa"
