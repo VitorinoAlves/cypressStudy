@@ -15,3 +15,4 @@ jobs:
           start: npm run cy:run:qa
           wait-on: 'https://www.demoblaze.com'
           config: baseUrl=https://www.demoblaze.com
+          env: environment=qa
