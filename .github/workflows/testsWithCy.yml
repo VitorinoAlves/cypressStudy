@@ -12,6 +12,10 @@ jobs:
           QA_USER_NAME: ${{secrets.QA_USER_NAME}}
           QA_PASSWORD: ${{secrets.QA_PASSWORD}}
         with:
-          start: npm run cy:run:qa
-          wait-on: 'https://www.demoblaze.com'
-          config: baseUrl=https://www.demoblaze.com
+          command: npm run cy:run:qa
+          env: environment=qa
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: /home/runner/work/cypressStudy/cypressStudy/cypress/reports/html/index.html
