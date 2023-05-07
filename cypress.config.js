@@ -3,6 +3,7 @@ require("dotenv").config();
 
 module.exports = defineConfig({
   modifyObstructiveCode: true,
+  videosFolder: 'cypress/reports/html/videos',
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
