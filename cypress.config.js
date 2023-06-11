@@ -5,6 +5,8 @@ module.exports = defineConfig({
   modifyObstructiveCode: true,
   videosFolder: 'cypress/reports/html/videos',
   reporter: 'cypress-mochawesome-reporter',
+  experimentalFetchPolyfill: true,
+  chromeWebSecurity: false,
   reporterOptions: {
     charts: true,
     reportPageTitle: 'Test Automation Report',
