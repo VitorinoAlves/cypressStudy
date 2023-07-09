@@ -13,7 +13,7 @@ To run the tests in this project, ensure that you have the following installed:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/VitorinoAlves/cypressStudy.git
 
 2. Navigate to the project directory:
 
